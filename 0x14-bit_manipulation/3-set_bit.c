@@ -1,6 +1,6 @@
 #include "main.h"
 
-int set_bit(unsigned long int *x, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int p;
 
@@ -9,7 +9,7 @@ int set_bit(unsigned long int *x, unsigned int index)
 
 	for (p = 1; index > 0; index--, p *= 2)
 		;
-	*x += p;
+	*n += p;
 
 	return (1);
 }
