@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-int clear_bit(unsigned long int *x, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int i;
 	unsigned int hold;
@@ -11,8 +11,8 @@ int clear_bit(unsigned long int *x, unsigned int index)
 	for (i = 1; hold > 0; i *= 2, hold--)
 		;
 
-	if ((*x >> index) & 1)
-		*x -= i;
+	if ((*n >> index) & 1)
+		*n -= i;
 
 	return (1);
 }
