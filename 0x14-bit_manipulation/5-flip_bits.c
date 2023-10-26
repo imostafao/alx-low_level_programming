@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-unsigned int flip_bits(unsigned long int x, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int diff;
 	int counter;
 
-	diff = x ^ m;
+	diff = n ^ m;
 	counter = 0;
 
 	while (diff)
