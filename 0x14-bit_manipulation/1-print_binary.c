@@ -1,22 +1,22 @@
 #include "main.h"
 #include <stdio.h>
-void print_binary(unsigned long int x)
+void print_binary(unsigned long int n)
 {
 	unsigned long int temp;
 	int shifts;
 
-	if (x == 0)
+	if (n == 0)
 	{
 		printf("0");
 		return;
 	}
 
-	for (temp = x, shifts = 0; (temp >>= 1) > 0; shifts++)
+	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
 		;
 
 	for (; shifts >= 0; shifts--)
 	{
-		if ((x >> shifts) & 1)
+		if ((n >> shifts) & 1)
 			printf("1");
 		else
 			printf("0");
